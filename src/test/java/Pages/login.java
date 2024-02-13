@@ -3,6 +3,8 @@ package Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
+
 public class login {
 
 	WebDriver driver;
@@ -14,12 +16,14 @@ public class login {
 	public void enterUsername(String username) {
 
 		driver.findElement(usernameText).sendKeys(username);
+		System.out.println("THIS IS USA EDIT");
 
 	}
 
 	public void enterPassword(String password) {
 
 		driver.findElement(passwordText).sendKeys(password);
+		System.out.println("THIS IS USA EDIT AGAIN");
 
 	}
 
